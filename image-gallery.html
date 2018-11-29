@@ -9,37 +9,59 @@
     <style> 
 
         /* # are ids */
-        #gallery-wrapper{border: solid red 2px }
+        
         #top-section{border: solid blue 2px}
-        #middle-section{border: solid green 2px}
-        #bottom-section{border: solid yellow 2px}
-
+      
         /* . are classes */
         .thumb{
             width: 15%;
         }
 
-        img{ width: 1000px}
+        body {
+            margin: 0px;
+        }
+        .column {
+            padding: 0px;
+            
+            
         }
 
-    </style>
-  
+        .left {
+            display: inline-block;
+            width: 20%;
+        }
+
+        .right {
+            display: inline-block;
+            width: 70%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* box-sizing and border-box .... look up this eve */
+
+    </style> 
 </head>
 <body>
 
     <!-- A wrapper for the entire gallery. 
         The Div does nothing but help us organize content. -->
-    <div id="gallery-wrapper">
+    
         
 
-        <div id="top-section">
+        <div id="top-section" >
             <h1>A photo gallery made with CSS, HTML, a tiny bit of JS, and a whole lotta love.</h1>
             
             
             
         </div>
 
-        <div id="middel-section">
+        <div class ="row">
+        <div class="column left">
             <h2>Middle Section</h2>
 
             <!-- images -->
@@ -56,17 +78,23 @@
             
         </div>
 
-        <div id="bottom-section">
+        <div class ="column right" >
             <h3>Bottom Section</h3>
 
             <!-- image -->
             <img src="./prov_state_canyon.jpg" name = "bigImage"/> 
             
-            
         </div>
-
-        
     </div>
+
+
+
+    
+
+    
+
+
+    
 
 
 
