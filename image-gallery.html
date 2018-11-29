@@ -7,10 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style> 
+
+        /* # are ids */
         #gallery-wrapper{border: solid red 2px }
         #top-section{border: solid blue 2px}
-        #top-middle{border: solid green 2px}
+        #middle-section{border: solid green 2px}
         #bottom-section{border: solid yellow 2px}
+
+        /* . are classes */
+        .thumb{
+            width: 15%;
+        }
+
+        img{ width: 1000px}
+        }
+
     </style>
   
 </head>
@@ -30,12 +41,26 @@
 
         <div id="middel-section">
             <h2>Middle Section</h2>
+
+            <!-- images -->
+            <img class="thumb" src="./arabia_mnt.jpg" onclick="bigImage.src=this.src"/>
+            <img class="thumb" src="./callaway_gardens.jpg" onclick="bigImage.src=this.src"/>
+            <img class="thumb" src="./Etowah_Indian_Mounds.jpg" onclick="bigImage.src=this.src"/>
+            <img class="thumb" src="./prov_state_canyon.jpg" onclick="bigImage.src=this.src"/>
+            <img class="thumb" src="./wormsloe.jpg" onclick="bigImage.src=this.src"/>
+
+            <!-- "this" in JS is what "self" is in Python -->
             
+            <!-- An id is unique to a page, like a serial number
+            a class is not unique but groups things together, like a upc -->
             
         </div>
 
         <div id="bottom-section">
             <h3>Bottom Section</h3>
+
+            <!-- image -->
+            <img src="./prov_state_canyon.jpg" name = "bigImage"/> 
             
             
         </div>
