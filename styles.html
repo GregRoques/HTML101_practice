@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page CSS Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+    
+        .meme-holder{
+
+            width: 1000px;
+            background-color: red;
+                /* margin houses background color... padding is inside of it.  */
+                /* move inside content...use margin */
+            margin: 5px;
+            padding: 5px;
+                /* padding honors background color */
+                /* make content look bigger = use padding */
+            border: solid black 2px;       
+                /* border is inside of margin       */
+            text-align: center; 
+                /* centers even if it is not text */
+        }
+
+        img{
+            width: 50 px;
+        }
+
+        .block{
+            height: 100px;
+            width: 100px; 
+            margin: 10px;
+            display: inline-block;
+
+        }
+
+        #block1{
+            background-color: red;
+            /* height: 100px;
+            width: 100px; */
+        }
+
+        #block2{
+            background-color: green;
+            /* height:100px;
+            width:100px; */
+        }
+
+        #block3{
+            background-color: orchid
+        }
+
+        #block-wrapper{
+            text-align: right;
+        }
+    
+    
+    </style>
+
+</head>
+
+<body>
+
+        <!-- <div class="meme-holder">
+            <img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+        </div> -->
+
+        <h1>BLOCK ELEMENT</h1>
+            <ol>
+                <li>A block level element, by default, takes up all the space to the right and to the left, internal to its partent</li>
+                <li>Nothing can ever be on either side (internal to the parent) because it's 100%. If you cahnge the wideth, it will just add a margin.
+                    Blocks will ignore margin you add, because they're already 100%.
+                </li>
+                <li>Can be >100%</li>
+
+
+            </ol>
+
+            <div id="block-wrapper">
+                    <div id="block1" class = "block">
+            
+                    </div>
+            
+                    <div id="block2" class="block">
+            
+                    </div>
+            
+                    <div id="block3" class="block">
+            
+                    </div>
+            </div>
+
+        <h1>INLINE ELEMENT</h1>
+
+            <ol>
+                    <li>Respect left and right padding, left and right margin
+                    but will ignore top and bottom.</li>
+                    <li>Couldn't care less what is left or right.</li>
+                    <li>With a few exceptions (namely images) you CANNOT tell an inline
+                    element how big to be.</li>
+                    <li>Will happily ignore all block level rules unless forced to do so</li>
+            </ol>
+
+            <h1>INLINE BLOCKS</h1>
+            <ol>
+                    1. Can have stuff on either side (inline positive)<br/>
+                    2. Can have height/width (block positive)<br/>
+                    3. Can have top/bottom padding/margin (block positive)
+
+
+            </ol>
+
+    
+</body>
+</html>
